@@ -1,0 +1,131 @@
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ vi max-temp.txt
+i
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ vi max-temp.txt
+s
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ cat max-temp.txt
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ 28-02-2017,17
+bash: 28-02-2017,17: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+bash: 27-02-2017,19: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+bash: 27-02-2017,19: command not found
+o
+[acadgild@localhost ~]$ 28-02-2017,17
+bash: 28-02-2017,17: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+d
+bash: 27-02-2017,19: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+bash: 27-02-2017,19: command not found
+[acadgild@localhost ~]$ 28-02-2017,17
+bash: 28-02-2017,17: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+bash: 27-02-2017,19: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+bash: 27-02-2017,19: command not found
+[acadgild@localhost ~]$ 28-02-2017,17
+bash: 28-02-2017,17: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+bash: 27-02-2017,19: command not found
+[acadgild@localhost ~]$ 27-02-2017,19
+f
+bash: 27-02-2017,19: command not found
+[acadgild@localhost ~]$ 
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ hadoop fs -put max-temp.txt /user/acadgild/hadoop
+2
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ 17/02/28 02:08:28 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ 
+bash: 17/02/28: No such file or directory
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ hadoop fs -ls
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ 17/02/28 02:08:57 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+m
+bash: 17/02/28: No such file or directory
+[acadgild@localhost ~]$ Found 4 items
+c
+bash: Found: command not found
+[acadgild@localhost ~]$ drwxr-xr-x   - acadgild supergroup          0 2015-11-20 11:46 Pictures
+bash: drwxr-xr-x: command not found
+[acadgild@localhost ~]$ drwxr-xr-x   - acadgild supergroup          0 2017-02-28 02:08 hadoop
+r
+bash: drwxr-xr-x: command not found
+[acadgild@localhost ~]$ drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:03 oozie-acad
+2
+bash: drwxr-xr-x: command not found
+[acadgild@localhost ~]$ drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:00 share
+r
+bash: drwxr-xr-x: command not found
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ hadoop fs -ls /user/acadgild/hadoop
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ 17/02/28 02:09:21 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+bash: 17/02/28: No such file or directory
+[acadgild@localhost ~]$ Found 2 items
+bash: Found: command not found
+[acadgild@localhost ~]$ -rw-r--r--   1 acadgild supergroup        169 2017-02-28 02:08 /user/acadgild/hadoop/max-temp.txt
+bash: -rw-r--r--: command not found
+[acadgild@localhost ~]$ -rw-r--r--   1 acadgild supergroup         38 2017-02-28 01:30 /user/acadgild/hadoop/word-count.txt
+bash: -rw-r--r--: command not found
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ hadoop fs -chmod -R 777 /user/acadgild/hadoop/word-count.txt
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ 17/02/28 02:26:56 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+bash: 17/02/28: No such file or directory
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ hadoop fs -ls /user/acadgild/hadoop
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ 17/02/28 02:27:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+bash: 17/02/28: No such file or directory
+[acadgild@localhost ~]$ Found 2 items
+bash: Found: command not found
+[acadgild@localhost ~]$ -rw-r--r--   1 acadgild supergroup        169 2017-02-28 02:08 /user/acadgild/hadoop/max-temp.txt
+bash: -rw-r--r--: command not found
+[acadgild@localhost ~]$ -rwxrwxrwx   1 acadgild supergroup         38 2017-02-28 01:30 /user/acadgild/hadoop/word-count.txt
+bash: -rwxrwxrwx: command not found
+[acadgild@localhost ~]$ [acadgild@localhost ~]$ hadoop fs -chmod a-rw user/acadgild/hadoop/word-count.txt
+bash: [acadgild@localhost: command not found
+[acadgild@localhost ~]$ 17/02/28 02:41:49 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+bash: 17/02/28: No such file or directory
+[acadgild@localhost ~]$ chmod: `user/acadgild/hadoop/word-count.txt': No such file or directory
+> [acadgild@localhost ~]$ hadoop fs -chmod a-w /user/acadgild/hadoop/word-count.txt
+> 17/02/28 02:43:16 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+> [acadgild@localhost ~]$  hadoop fs -ls /user/acadgild/hadoop
+> 
+> 17/02/28 02:43:36 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+> Found 2 items
+> -rw-r--r--   1 acadgild supergroup        169 2017-02-28 02:08 /user/acadgild/hadoop/max-temp.txt
+> -r-xr-xr-x   1 acadgild supergroup         38 2017-02-28 01:30 /user/acadgild/hadoop/word-count.txt
+> [acadgild@localhost ~]$ 
+> [acadgild@localhost ~]$ hadoop fs -chmod a+rwx /user/acadgild/hadoop/word-count.txt
+> 17/02/28 02:46:01 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+> [acadgild@localhost ~]$ hadoop fs -ls /user/acadgild/hadoop
+> 17/02/28 02:46:18 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+> Found 2 items
+> -rw-r--r--   1 acadgild supergroup        169 2017-02-28 02:08 /user/acadgild/hadoop/max-temp.txt
+> -rwxrwxrwx   1 acadgild supergroup         38 2017-02-28 01:30 /user/acadgild/hadoop/word-count.txt
+> [acadgild@localhost ~]$ hadoop fs -chmod o-rwx /user/acadgild/hadoop/word-count.txt
+> 17/02/28 02:48:28 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+> [acadgild@localhost ~]$ hadoop fs -ls /user/acadgild/hadoop
+> 17/02/28 02:48:43 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where appli
+> Found 2 items
+> -rw-r--r--   1 acadgild s
+> -rwxrwx---   1 acadgild supergroup         38 2017-02-28 01:30 /user/acadgild/hado
+> [acadgild@localhost ~]$ had
+> 17/02/28 02:52:26 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platf
+> [acadgild@localhost ~]$ hadoop fs -ls /user/acadgild/hadoop
+> 17/02/28 02:52
+> Found 2 items
+> -rw-r--r--   1 acadgild supergroup        169 2017-02-28 02:08 /user/acadgild/hadoop/max-temp.txt
+> -rwxrwxrwx   1 acadgild supergroup 
+> [acadgild@localhost ~]$ hadoop fs -chmod o-rwx /user/acadgild/hadoop/word-count.txt
+> 
+> 17/02/28 02:54:03 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform
+> [acadgild@loc
+> [acadgild@localhost ~]$ hadoop fs -ls /user/acadgild/hadoop
+> 17/02/28 02:54:23 WARN util.NativeCodeLoader: Unable to load native-hadoop librar
+> Found 2 items
+> -rw-r--r--   1 acadgild supergroup        169 2017-02-28 02
+> -rwxrwx---   1 acadgild supergroup         38 2017-02-28 01:30 /user
+> [acadgild@localhost ~]$ 
+> 
